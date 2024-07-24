@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bgcolorlight);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  transition: background linear;
+  overflow: hidden;
+}
+
+body.dark {
+  background-color: var(--bgcolordark);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;  
+  color: var(--tcolor);
+  font-family: var(--fontp);
+}
+
+.descPais{
+  width: 40vh;
+  text-align: center;
+  transition: 0.2s;
+}
+.horario {
+  font-size: 10vh;
+  text-shadow: 1px 0 20px var(--bgcolordark);
+  transition: 0.2s;
+}
+
+.horario.dark {
+  text-shadow: 1px 0 20px var(--bgcolorlight);
+}
+
+.pais {
+  text-shadow: 1px 0 20px var(--bgcolordark);
+  font-size: 4vh;
+}
+
+.pais.dark{
+  text-shadow: 1px 0 20px var(--bgcolorlight);
+}
+
+.imgpais {
+  position: absolute;
+  z-index: -1;
+  min-height: 100%;
+  min-width: 100%;
+  filter: blur(4px);
+  opacity: 50%;
+}
+
+.botao {
+  border: none;
+  width: 20%;
+  height: 3vh;
+  font-family: var(--fontp);
+  background-color: var(--bgcolordark);
+  color: var(--tcolor);
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  transform: scale(1.1)
+}
+
+.botao.dark{
+  background-color: var(--bgcolorlight);
+  color: var(--pcolor);
+}
+
+:root {
+  --bgcolordark: #111;
+  --bgcolorlight: #fff;
+  --pcolor: #2E236C;
+  --scolor: #433D8B;
+  --tcolor: #FFF;
+
+  --fontp: "Roboto", monospace;
+}
