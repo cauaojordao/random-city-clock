@@ -13,8 +13,6 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
-  margin: 0;
-  transition: background linear;
   overflow: hidden;
 }
 
@@ -57,7 +55,7 @@ body.dark {
 }
 
 .imgpais {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   min-height: 100%;
   min-width: 100%;
